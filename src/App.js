@@ -53,13 +53,19 @@ function App() {
         </form>
         {loading ? (
           <div className="info">
-            <h1>
-              Ciudad: {info.name}, {info.sys.country}
+            <h1 className="ciudad">
+              {info.name}, {info.sys.country}
             </h1>
-            <p>Temperatura: {info.main.temp}°</p>
-            <p>Temp max: {info.main.temp_max}°</p>
-            <p>Temp min: {info.main.temp_min}°</p>
-            <p>Humedad: {info.main.humidity}%</p>
+            <p className="temperatura">{Math.trunc(info.main.temp)}°</p>
+            <p>
+              Temp max: <span> {Math.trunc(info.main.temp_max)}°</span>
+            </p>
+            <p>
+              Temp min: <span> {Math.trunc(info.main.temp_min)}°</span>
+            </p>
+            <p>
+              Humedad: <span> {info.main.humidity}%</span>
+            </p>
 
             <div className="cielo">
               <img

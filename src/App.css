@@ -55,10 +55,23 @@
   margin-top: 20px;
 }
 
-.info p {
-  font-size: 20px;
+.ciudad {
+  justify-self: center;
 }
 
+.temperatura {
+  font-size: 50px;
+  align-self: center;
+  justify-self: center;
+  background-color: rgba(255, 255, 255, 0.486);
+  padding: 7px 15px 7px 15px;
+  border-radius: 15px;
+  margin: 10px 0px 10px 0px;
+}
+
+span {
+  font-weight: 600;
+}
 .cielo {
   display: grid;
   justify-items: center;
@@ -70,6 +83,7 @@
   text-align: center;
   margin: 0;
 }
+
 .loader {
   display: grid;
   width: 100%;
